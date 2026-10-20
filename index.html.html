@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gửi người chị tôi thầm thương</title>
+<style>
+:root{
+  --site-primary:#9b3155;
+  --site-secondary:#e8a7b8;
+  --site-background:#fff7f8;
+  --site-on-primary:#ffffff;
+  --site-on-background:#351a25;
+  --site-font-body:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --site-font-heading:Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--site-font-body);color:var(--site-on-background);background:var(--site-background)}
+#app{min-height:100vh;background:var(--site-background);overflow:hidden}
+.hero{min-height:100vh;display:grid;place-items:center;padding:28px;position:relative;isolation:isolate}
+.decor{position:absolute;inset:0;pointer-events:none}
+.heart{position:absolute;font-size:clamp(18px,3vw,34px);animation:float 5s ease-in-out infinite}
+.h1{top:11%;left:12%}.h2{top:20%;right:12%;animation-delay:1s}.h3{bottom:15%;left:18%;animation-delay:2s}.h4{bottom:10%;right:20%;animation-delay:3s}
+@keyframes float{50%{transform:translateY(-13px) rotate(8deg)}}
+.card{width:min(900px,100%);text-align:center;padding:clamp(34px,7vw,78px) clamp(24px,7vw,72px);border:1px solid rgba(155,49,85,.16);border-radius:32px;background:rgba(255,255,255,.82);box-shadow:0 24px 80px rgba(100,25,48,.12);backdrop-filter:blur(10px);position:relative}
+.kicker{letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--site-primary);font-weight:700}
+h1{font-family:var(--site-font-heading);font-size:clamp(42px,8vw,82px);line-height:1.02;font-weight:500;margin:18px 0;color:var(--site-primary)}
+.subtitle{font-size:clamp(16px,2.4vw,21px);line-height:1.7;max-width:650px;margin:0 auto;color:#68404c}
+.divider{width:70px;height:1px;background:var(--site-secondary);margin:28px auto}
+.letter{display:none;text-align:left;max-width:680px;margin:30px auto 0;padding:26px;border-radius:20px;background:#fffafa;border:1px solid rgba(155,49,85,.12);line-height:1.9;font-size:16px}
+.letter.show{display:block;animation:rise .7s ease both}
+.step{display:none}.step.show{display:block;animation:rise .7s ease both}
+.choice{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+.choice button{margin-top:0}
+@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+button{margin-top:28px;border:0;cursor:pointer;padding:14px 24px;border-radius:999px;background:var(--site-primary);color:white;font-weight:700;font-size:15px;box-shadow:0 10px 25px rgba(155,49,85,.22);transition:.2s transform,.2s box-shadow}
+button:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(155,49,85,.28)}
+.signature{margin-top:24px;color:#9b3155;font-family:var(--site-font-heading);font-size:20px;font-style:italic}
+.small{font-size:12px;opacity:.65;margin-top:24px}
+@media(max-width:600px){.card{padding:38px 22px}.letter{padding:20px}.hero{padding:16px}}
+</style>
+</head>
+<body>
+<div id="app">
+  <main class="hero">
+    <div class="decor" aria-hidden="true">
+      <span class="heart h1">♡</span><span class="heart h2">♥</span>
+      <span class="heart h3">♡</span><span class="heart h4">♥</span>
+    </div>
+    <section class="card">
+      <div class="kicker">20 • 10 • 2026</div>
+      <h1>Gửi người chị tôi thầm thương</h1>
+      <p class="subtitle">Có những người xuất hiện trong cuộc đời rất nhẹ nhàng… nhưng lại khiến một ngày bình thường trở nên đặc biệt.</p>
+      <div class="divider"></div>
+      <div id="step1" class="step show">
+        <p class="subtitle">Nhân ngày 20/10, em có một điều đã giữ trong lòng khá lâu.</p>
+        <button id="open">Bắt đầu nhé ✨</button>
+      </div>
+      <div id="step2" class="step">
+        <p class="subtitle">Trước khi đọc tiếp… chị có biết có một người vẫn âm thầm quan tâm chị không?</p>
+        <div class="choice"><button id="yes">Hình như có… 💗</button><button id="maybe">Em không biết 😳</button></div>
+      </div>
+      <div id="step3" class="step">
+        <p class="subtitle">Vậy thì cho người ấy một cơ hội được nói điều đã giữ trong lòng nhé.</p>
+        <button id="reveal">Mở điều cuối cùng 💌</button>
+      </div>
+      <div id="letter" class="letter">
+        <strong>Chị à,</strong><br><br>
+        Em không biết nên bắt đầu từ lúc nào, chỉ biết rằng từ khi quen chị,
+        em đã nhiều lần vô thức tìm kiếm nụ cười ấy giữa những điều rất bình thường.
+        <br><br>
+        Có thể chị chưa từng biết, nhưng em thật sự quý chị — nhiều hơn một chút so với một người em gặp hằng ngày.
+        Em không muốn làm ngày hôm nay trở nên áp lực hay khiến chị phải trả lời điều gì.
+        Em chỉ muốn nhân dịp 20/10, thành thật với cảm xúc của mình một lần.
+        <br><br>
+        Chúc chị luôn vui, luôn xinh đẹp và gặp thật nhiều điều dịu dàng.
+        Còn nếu một ngày chị muốn biết người đã âm thầm thương chị là ai…
+        thì người ấy vẫn đang ở đây. ❤️
+        <div class="signature">— Một người vẫn luôn âm thầm quan tâm chị</div>
+      </div>
+      <div class="small">Một lời chúc không cần hồi đáp, chỉ cần chị đọc và mỉm cười.</div>
+    </section>
+  </main>
+</div>
+<script>
+const step1=document.getElementById('step1'),step2=document.getElementById('step2'),step3=document.getElementById('step3');
+const letter=document.getElementById('letter');
+const next=(a,b)=>{a.classList.remove('show');b.classList.add('show');window.scrollTo({top:0,behavior:'smooth'});};
+document.getElementById('open').onclick=()=>next(step1,step2);
+document.getElementById('yes').onclick=()=>next(step2,step3);
+document.getElementById('maybe').onclick=()=>next(step2,step3);
+document.getElementById('reveal').onclick=()=>{letter.classList.add('show');step3.classList.remove('show');};
+</script>
+</body>
+</html>
